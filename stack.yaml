@@ -1,0 +1,12 @@
+resolver: lts-14.16
+
+nix:
+  enable: true
+  pure: false
+  packages: [ zlib, stack ]
+
+packages:
+- .
+
+extra-deps:
+- blaze-html-contrib-0.2.2@sha256:b1aa217a4fc4ff5eaa592f89330d573c94871c228e78a1d227fa876cd5068134,990

@@ -1,0 +1,13 @@
+:root {
+    --bg-color:  #0E1827;
+    --fg-color1: #FFF;
+    --fg-color2: #AAA;
+    --highlight: #9AA9FB;
+
+    background-color: var(--bg-color);
+    color: var(--fg-color1);
+    
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}

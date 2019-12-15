@@ -1,0 +1,35 @@
+.post-content {
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+    color: var(--fg-color1);
+}
+
+.post-content h1 {
+    color: var(--highlight);
+    font-size: 1.75rem;
+    border-bottom: 1px solid;
+    margin: 0px 0px 20px 0px;
+}
+
+.post-content .code-block {
+    background-color: #041229;
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.6;
+    display: block;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 20px 0px 20px 0px;
+}
+
+.post-content p {
+    margin: 0px;
+}
+
+.post-content code {
+    font-size: 85%;
+    color: #c48a90;
+    background-color: #041229;
+    border-radius: 3px;
+    margin: 0px 2px 0px 2px;
+}
