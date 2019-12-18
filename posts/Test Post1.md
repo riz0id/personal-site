@@ -1,9 +1,5 @@
-title: test post
+title: First Post
 date: 2019-12-3
-tags: launch
-    - rockets
-    - via
-    - floppy disks
 
 post-desc:
 pre ***placeholder*** text `lalal`

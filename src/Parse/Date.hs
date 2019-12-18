@@ -28,6 +28,4 @@ date = Date
        <*> (day   <* newline  <?> error "/date/ trailing whitespace")
 
 instance ToMarkup Date where
-  toMarkup (Date y m d) =
-      B.span ! A.class_ "preview-date"
-    $ B.toHtml (y ++ "-" ++ m ++ "-" ++ d)
+  toMarkup (Date y m d) = B.h3 $ B.toHtml (y ++ "-" ++ m ++ "-" ++ d)

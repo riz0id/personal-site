@@ -17,15 +17,10 @@ title = manyTill anyChar newline
       >>= return . Title
 
 instance ToMarkup Title where
-  toMarkup (Title inner) =
-      B.b
-    $ B.a ! A.class_ "preview-name"
-          ! A.href (B.stringValue $ "/" ++ mkLink inner)
-    $ B.toHtml inner
+  toMarkup (Title inner) = B.h3 . B.toHtml $ inner
 
 mkReadmore :: Title -> B.Html
 mkReadmore (Title inner) =
-    B.a ! A.class_ "read-more"
-        ! A.href (B.stringValue $ "/" ++ mkLink inner)
-  $ B.b "read more →"
+    B.a ! A.href (B.stringValue $ "/" ++ mkLink inner)
+  $ "read more →"
 

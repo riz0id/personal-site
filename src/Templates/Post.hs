@@ -1,27 +1,21 @@
-{-# LANGUAGE OverloadedStrings #-}
+module Templates.Post ( preview ) where
 
-module Templates.Post
-  ( preview, {-post-} ) where
+import Data.Char
+import Data.Maybe
 
-import           Data.Char
-import           Data.Maybe
-
-import           Text.Blaze.Html5 (ToMarkup, Html, (!), toHtml)
+import Text.Blaze.Html5 (ToMarkup, Html, toHtml)
 import qualified Text.Blaze.Html5 as B
-import           Text.Blaze.Html5.Attributes
 
-import           Parse
+import Parse
 
-preview :: Blogpost -> B.Html
+preview :: Blogpost -> Html
 preview blogmd = do
-  B.div ! class_ "preview-body" $ do
-    B.div ! class_ "preview-title" $ do
+  B.section $ do
+    B.header $ do
       toHtml . titleFrom $ blogmd
       toHtml . dateFrom  $ blogmd
-    B.div ! class_ "post-content" $ do
-      
+    B.hr
+    B.summary $ do
       toHtml . descFrom $ blogmd
-    B.div ! class_ "preview-footer" $ do
-      B.ul  ! class_ "preview-tags" $ do
-        B.toHtml . tagsFrom $ blogmd
+    B.footer $ do
       mkReadmore . titleFrom $ blogmd

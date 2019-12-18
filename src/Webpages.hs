@@ -1,7 +1,9 @@
 module Webpages 
   ( module Webpages.Index
-  , module Webpages.Posts
+  , module Webpages.Summary
+  , module Webpages.Blogpost
   ) where
   
 import Webpages.Index
-import Webpages.Posts
+import Webpages.Summary
+import Webpages.Blogpost
