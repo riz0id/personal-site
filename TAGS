@@ -1,55 +1,0 @@
-
-./Setup.hs,15
-main main1,2
-
-./src/API/Type.hs,58
-module API.Type API.Type4,5
-type Webpage Webpage12,13
-
-./src/API/Index.hs,75
-module API.Index API.Index3,4
-type Index Index14,15
-index index16,17
-
-./src/Main.hs,32
-app app16,17
-main main20,21
-
-./src/API.hs,92
-module API API3,4
-type SiteAPI SiteAPI10,11
-siteApi siteApi13,14
-server server16,17
-
-./src/Templates/Footer.hs,67
-module Templates.Footer Templates.Footer2,3
-footer footer13,14
-
-./src/Templates/Header.hs,65
-module Templates.Header Templates.Header2,3
-header header7,8
-
-./src/Templates/Type.hs,205
-module Templates.Type Templates.Type0,1
-data WebConfig WebConfig6,7
-data WebConfig = WebConfigWebConfig6,7
-  { dateRevised dateRevised7,8
-  , navigation navigation8,9
-type ConfigM ConfigM11,12
-
-./src/Templates/Nav.hs,55
-module Templates.Nav Templates.Nav0,1
-nav nav10,11
-
-./src/Templates/Index.hs,63
-module Templates.Index Templates.Index2,3
-index index14,15
-
-./src/Type.hs,116
-module Type Type0,1
-newtype WebConfig WebConfig6,7
-    dateRevised dateRevised7,8
-type ConfigM ConfigM10,11
-
-./src/Templates.hs,31
-module TemplatesTemplates0,1
