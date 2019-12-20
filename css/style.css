@@ -1,0 +1,70 @@
+:root {
+    --bg-color:   #0E1827;
+    --fg-color1:  #FFF;
+    --fg-color2:  #AAA;
+    --link-color: #268BD2;
+    --highlight:  #9AA9FB;
+
+    --font-size-L: 1.46rem;
+    --font-size-M: 1.36rem;
+    --font-size-R: 1.2em;
+    --font-size-S: 0.8rem;
+
+    background-color: var(--bg-color);
+    color: var(--fg-color1);
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: var(--font-size-R);
+    max-width: 864px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color) !important;
+    outline: 0;
+}
+
+footer *, nav * {
+    color :var(--fg-color2) !important;
+}
+
+
+header {
+    background: repeating-linear-gradient(45deg,var(--highlight),var(--highlight) 10px,transparent 0,transparent 15px);
+    padding: 10px 0;
+}
+
+hr {
+    border: 3px dotted var(--highlight);
+    margin: 20px 0px;
+    height: 3px;
+}
+
+mark {
+    background-color: var(--highlight);
+    padding: 10px 10px;
+    font-size: var(--font-size-L);
+}
+
+nav {
+    font-size: var(--font-size-M);
+    padding: 10px 0px 30px 0px;
+}
+
+footer {
+    text-align: center;
+    font-size: var(--font-size-S);
+    border-top: 1px solid hsla(0,0%,100%,0.1);
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1vw;
+}
+
+li::before {
+    color: var(--highlight);
+    content: "\25BA";
+    margin-right: 5px;
+}
+

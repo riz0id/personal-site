@@ -1,7 +1,8 @@
-module Templates 
-  ( module Templates.Post
-  , module Templates.Index
+module Templates
+  ( module Templates.Index
+  , module Templates.Type
+  , WebConfig(..)
   ) where
 
-import Templates.Post
-import Templates.Index
+import           Templates.Index
+import           Templates.Type
