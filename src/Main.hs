@@ -25,7 +25,7 @@ main = do
 
   let config = Templates.WebConfig
         { dateRevised = date
-        , navigation  = ["home"]
+        , navigation  = ["home", "resume"]
         }
 
   Warp.run port $ app config

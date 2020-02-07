@@ -24,7 +24,7 @@ index innerContent = do
              ! type_ "text/css"
              ! href  "style/style.css"
 
-      B.title "rizz.space"
+      B.title "rizoid.space"
 
     B.body $ do
       Templates.header
