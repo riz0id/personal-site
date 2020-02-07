@@ -16,4 +16,8 @@ type Resume = Webpage "resume"
 resume :: ConfigM Html
 resume = Templates.index $ do
   B.hr
+  B.p $ do
+    "you can find a pdf version " 
+    B.a ! href "static/Resume.pdf"
+        $ "here"
   B.iframe ! src "static/Resume.html" $ mempty
